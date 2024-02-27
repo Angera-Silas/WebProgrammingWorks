@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+        <style type="text/css">
+            body{
+                background: url(../../Pictures/dj\ bozz.png);
+                color: white;
+                box-sizing: border-box;
+                background-size: cover;
+            }
+            form{
+                justify-content: center;
+            }
+            fieldset{
+                align-items: center;
+                justify-content: center;
+                width: 400px;
+            }
+            fieldset legend{
+                font-size: 25px;
+                font-weight: 600;
+            }
+            input{
+                background-color: transparent;
+                border: 2px solid cyan;
+            }
+            label{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            textarea{
+                background-color: transparent;
+            }
+            select{
+                background-color: transparent;
+            }
+
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Registration Form</legend>
+        <form action="" method="">
+            <label>Name</label><br>
+            <input type="text" maxlength="25"></input><br>
+
+            <label>Password</label><br>
+            <input type="password" minlength="8" maxlength="15"></input><br>
+
+            <label>Subject</label><br>
+            <input type="checkbox" checked> Web </input><br>
+            <input type="checkbox">C++</input><br>
+            <input type="checkbox">Java</input><br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender">Male</input>
+            <input type="radio" name="gender">Female</input>
+            <input type="radio" name="gender" checked>Other</input><br>
+
+            <label>Comments</label><br>
+            <textarea cols="20" rows="5" placeholder="Enter description..."></textarea><br>
+
+            <label>Department</label><br>
+            <select>
+                <option value="commerce">Commerce</option>
+                <option value="economics">Economics</option>
+                <option value="finance">Finance</option>
+            </select>
+        </form>
+        </fieldset>
+    </body>
+</html>

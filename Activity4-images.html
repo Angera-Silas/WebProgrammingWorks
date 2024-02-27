@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            padding-block: 2rem;
+            position: relative;
+            width: 100%;
+        }
+        .image-container{
+            min-height: 30rem;
+            background-color: #f1f1f1;
+        }
+        .image-2{
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            width: 90%;
+            padding: 2rem 0;
+            z-index: 10;
+            height: 60%;
+        }
+        .image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="../images/bozz.jpg" alt="Prof Angera" class="image">
+            <div class="image-2">
+                <img src="../images/angera.png" alt="Prof Silas" class="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

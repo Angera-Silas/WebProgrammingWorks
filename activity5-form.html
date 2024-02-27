@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        :root{
+    --primary-background-color: #fff;
+    --primary-background-photo: url('../images/egypt2.jpg');
+    --secondary-background-color: #f1f1f1;
+    --font-size-small: 14px;
+    --font-size-md: 24px;
+    --gap: 2rem;
+    --font-size-lg: 45px;
+    --light-color: #fff;
+    --dark-color: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--primary-background-photo);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.list {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+}
+
+.form{
+    font-size: 16px;
+    width: 30rem;
+    text-align: start;
+    backdrop-filter: blur(20px);
+    padding: 2rem 2rem 2rem 3rem;
+}
+.form input{
+    margin: 1rem .3rem;
+    background-color: transparent;
+}
+#day,#month,#year{
+    width: 23rem;
+    height: 2rem;
+    outline: none;
+    border: 2px solid black;
+}
+
+#day,#month,#year{
+    width: 5rem;
+}
+.dates{
+    display: flex;
+    flex-wrap: wrap;
+}
+.date{
+    width: 30%;
+    margin: 0 1.5%;
+}
+.buttons{
+    justify-content: space-between;
+    display: flex;
+}
+.btn{
+    background-color: #d9004d;
+    border: 2px solid #d9004d;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+.submit-form-btn{
+    margin-right: 1.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+        <label for="status">Status: </label>
+        <input type="radio" name="status" id="employed" checked>Employed
+        <input type="radio" name="status" id="unemployed">Unemployed
+        <input type="radio" name="status" id="student">Student
+        <br>
+
+        <label for="title">Title</label>
+        <input type="radio" name="title" id="title">Mr
+        <input type="radio" name="title" id="mrs">Mrs
+        <input type="radio" name="title" id="miss">Miss
+        <input type="radio" name="title" id="Ms">Ms
+        <input type="radio" name="title" id="dr">Dr<br>
+
+        <label for="age">Age</label><br>
+        <input type="radio" name="age" id="Under-20">Under 20
+        <input type="radio" name="age" id="20-29">20-29
+        <input type="radio" name="age" id="30-39">30-39 <br>
+        <input type="radio" name="age" id="40-49">40-49
+        <input type="radio" name="age" id="50-59">50-59
+        <input type="radio" name="age" id="over-60">Over 60<br>
+
+        <label>Date Of Birth</label>
+        <div class="dates">
+            <div class="date">
+                <label for="date">Day</label><br>
+                <input type="number" name="day" id="day" min="1" max="31">
+            </div>
+            <div class="date">
+                <label for="month">Month</label> <br>
+                <input type="month" name="month" id="month">
+            </div>
+            <div class="date">
+                <label for="year">Year</label><br>
+                <input type="number" name="year" id="year" min="1960" max="1996">
+            </div>
+        </div>
+
+        <label for="payment">Payment Mode:</label> <br>
+        <input type="checkbox" name="payment" id="visa">Visa
+        <input type="checkbox" name="payment" id="mastercard">Mastercard
+        <input type="checkbox" name="payment" id="paypal">Paypal
+        <div class="buttons">
+            <button class="btn clear-form-btn" type="reset">Clear Form</button>
+            <button class="btn submit-form-btn" type="submit">Book Now </button>
+        </div>
+    </form>
+</body>
+</html>

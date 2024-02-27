@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPaper</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-wrap: break-word;
+            font-family: sans-serif;
+        }
+
+        .title {
+            padding-top: 3rem;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            text-align: center;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+            padding: 15px 0 15px 0;
+            margin: 2rem 3rem;
+        }
+
+        .container {
+            margin: 2rem 3rem;
+        }
+        .first-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .flex {
+            width: 33.33%;
+            margin: 10px;
+        }
+        .first-section1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .first-section2 {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            padding: 1rem;
+
+        }
+        .author{
+            text-align: start;
+        }
+        .heading {
+            text-align: start;
+            font-size: 2.5rem;
+        }
+        .sub-heading{
+            margin: .5rem 0;
+            font-size: 1.8rem;
+            font-weight: 250;
+        }
+        .text {
+            text-align: justify;
+            line-height: 1.2rem;
+            font-size: 15px;
+            padding-bottom: 1rem;
+        }
+
+        .quote {
+            padding-left: 1rem;
+            font-size: 1.8rem;
+        }
+        .list-items{
+            list-style: circle;
+            font-size: 1.2rem;
+            padding-left: 3rem;
+            padding-bottom: 2rem;
+        }
+        .spacer{
+            padding: .5rem 0;
+        }
+        .image-container {
+            height: 170px;
+            width: 170px;
+            float: left;
+            margin-right: 2rem;
+            text-wrap: wrap;
+        }
+        .news-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .image-name{
+            text-align: center;
+            font-size: 1.0rem;
+            margin-bottom: 6rem;
+        }
+        .gold{
+            line-height: 1.5rem;
+            text-align: justify;
+            word-spacing: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">NEWSPAPER TITLE</h1>
+    <h3 class="sub-title">TUESDAY, 5<sup>TH</sup>SEPTEMBER 2021</h3>
+    <!--First section-->
+    <div class="container">
+        <div class="first-container">
+            <div class="first-section1 flex">
+                <h1 class="heading">ARTICLE HEADING</h1>
+                <span class="author">Silas Angera</span>
+            </div>
+            <div class="first-section2 flex">
+                <span class="text">
+                    Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et margins dis parturient montes,
+                    nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget duam. Sed posuere
+                    consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet , consectetur adipising elit.
+                    Curabitur
+                    blandit tempus porttitor.
+                </span>
+            </div>
+            <div class="first-section3 flex">
+                <span class="text">
+                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis
+                    interdum.
+                    Cum sociis natoque penatibus et magnis disparturient montes, nascetur ridiculus mus. Vivamus sagitis
+                    lacus vel augue laoreet ruturn faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem
+                    lacina
+                    quam venenatis vestibulum.
+                </span>
+            </div>
+        </div>
+
+        <!--Quatation statement-->
+
+        <blockquote class="quote">
+            <q>Fusce dapibus tellus ac cursus commodo, tortor mauris contimentum nibh , ut fermentu massa justo sit amet risus.</q>
+        </blockquote>
+
+        <!--Second section -->
+        <div class="first-container">
+            <div class="first-section1 flex">
+                
+                <span class="text">
+                    Aenean lacina bibendum nulla sed consectetur. Duis mollis, est non commondo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapidus ac faucibus in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultrices vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.
+                </span>
+                <h2 class="sub-heading">SUBHEADING</h2>
+                <ol class="text list-items">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
+                <span class="text">
+                    Cras justo odio,  dapibus ac facilisis in, egestas eget quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+            </div>
+            <div class="first-section2 flex">
+                <span class="text">
+                    Prasent commodo cursus magna, vel scelerisque nisl constrectur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed constrectur.
+                </span>
+                <div class="spacer"></div>
+                <span class="text">
+                    Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacina quam venenatis vestibulum. Aenean lacina bibendum nulla sed consectetur. Aenean lacina bibendum nulla sed consectetur.
+                </span>
+                <h2 class="sub-heading">SUBHEADING</h2>
+                <span class="text">
+                    Prasent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacina quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.
+                </span>
+            </div>
+            <div class="first-section3 flex">
+                <div class="image-container">
+                    <div>
+                        <img src="../images/activity.jpg" alt="Activity 1" class="news-image">
+                    </div>
+                    <h4 class="image-name">Golden Gate Bridge</h4>
+                </div>
+                <span class="text gold">
+                    Aenean lacina bibendum nulla sed consectetur. Integer posuere erat a ante ve-nenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </span>
+                <div class="spacer"></div>
+                <span class="text">
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commondo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

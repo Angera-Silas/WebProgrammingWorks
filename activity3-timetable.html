@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: green;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tt {
+            position: relative;
+            background-color: #f1f1f1;
+            justify-content: center;
+        }
+
+        .header {
+            background-color: blue;
+            color: #fff;
+        }
+
+        #title {
+            font-size: 24px;
+        }
+
+        #column-head {
+            font-size: 16px;
+        }
+
+        #column-title {
+            font-size: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 1.55rem;
+        }
+
+        td {
+            padding: .15rem 1rem;
+        }
+
+        #wht {
+            background-color: white;
+        }
+
+        tfoot {
+            background-color: lightblue;
+        }
+
+        #day {
+            font-weight: 600;
+            font-size: 16px;
+            background-color: lightblue;
+            color: purple;
+        }
+
+        #lunch {
+            font-weight: 500;
+            font-size: 3rem;
+            writing-mode: vertical-rl;
+            /* vertical left to right */
+            text-align: center;
+            transform: rotate(180deg);
+            letter-spacing: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellpadding="0" cellspacing="0" align="center" id="tt">
+        <thead class="header">
+            <tr>
+                <th colspan="7" id="title">BACHELOR'S OF BUSINESS INFORMATION TECHNOLOGY Y3S2 CLASS TIMETABLE</th>
+            </tr>
+            <tr>
+                <th rowspan="2" id="column-title">Day</th>
+                <th id="column-head">Begin</th>
+                <th id="column-head">7: 00 a.m. </th>
+                <th id="column-head">10: 30 a.m. </th>
+                <th id="column-head">1: 00 p.m. </th>
+                <th id="column-head">2: 00 p.m. </th>
+                <th id="column-head">4: 00 p.m. </th>
+            </tr>
+            <tr>
+                <th id="column-head">End</th>
+                <th id="column-head">10: 00 a.m. </th>
+                <th id="column-head">1: 00 p.m. </th>
+                <th id="column-head">2: 00 p.m. </th>
+                <th id="column-head">4: 00 p.m. </th>
+                <th id="column-head">6: 00 p.m. </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="wht">
+                <td rowspan="4" id="day">Monday</td>
+                <td>Unit Code</td>
+                <td>BBIT 221</td>
+                <td>BBIT 325</td>
+                <td rowspan="20" id="lunch">Lunch</td>
+                <td rowspan="4">Discussions</td>
+                <td>BBIT 315</td>
+            </tr>
+            <tr id="wht">
+                <td>Unit Name</td>
+                <td>Web Application Programming</td>
+                <td>Object Oriented Analysis and Design</td>
+                <td>E-commerce</td>
+            </tr>
+            <tr id="wht">
+                <td>Venue</td>
+                <td>BBIT L1</td>
+                <td>CONVOCATIONAL HALL</td>
+                <td>ONLINE</td>
+            </tr>
+            <tr id="wht">
+                <td>Lecturer</td>
+                <td>Ms. Daisy Ondwari</td>
+                <td>Mr. Wyclife Ayako</td>
+                <td>Mr. Evans Chesang</td>
+            </tr>
+
+            <!--Tuesday-->
+            <tr>
+                <td rowspan="4" id="day">Tuesday</td>
+                <td>Unit Code</td>
+                <td>BBIT 326</td>
+                <td rowspan="4">Discussions</td>
+                <td>BBIT 322</td>
+                <td>BMGT 320</td>
+            </tr>
+            <tr>
+                <td>Unit Name</td>
+                <td>Software Engineering</td>
+                <td>Management Information System</td>
+                <td>Research Methods</td>
+            </tr>
+            <tr>
+                <td>Venue</td>
+                <td>SMHS 2 <sup>nd</sup>Floor HALL 1</td>
+                <td>COMP LAB 1</td>
+                <td>SMHS 2 <sup>nd</sup>Floor HALL 2</td>
+            </tr>
+            <tr>
+                <td>Lecturer</td>
+                <td>Ms. Timothy Sawe</td>
+                <td>Mr. Joseph Orori</td>
+                <td>Mr. Beatrice Chelagat</td>
+            </tr>
+
+            <!--Wednesday-->
+            <tr id="wht">
+                <td rowspan="4" id="day">Wednesday</td>
+                <td>Unit Code</td>
+                <td rowspan="4">Discussions</td>
+                <td rowspan="2">Church service</td>
+                <td rowspan="4" colspan="2">Discussions</td>
+            </tr>
+            <tr id="wht">
+                <td>Unit Name</td>
+            </tr>
+            <tr id="wht">
+                <td>Venue</td>
+                <td>CONVOCATIONAL HALL</td>
+            </tr>
+            <tr id="wht">
+                <td>Lecturer</td>
+                <td>Provost/Chaplain</td>
+            </tr>
+
+            <!--Thursday-->
+            <tr>
+                <td rowspan="4" id="day">Thursday</td>
+                <td>Unit Code</td>
+                <td rowspan="4" colspan="2">Discussions</td>
+                <td>BBIT 326</td>
+                <td rowspan="4">Discussions</td>
+            </tr>
+            <tr>
+                <td>Unit Name</td>
+                <td>Team Project</td>
+            </tr>
+            <tr>
+                <td>Venue</td>
+                <td>Auditorium</td>
+            </tr>
+            <tr>
+                <td>Lecturer</td>
+                <td>Mr. Komen</td>
+            </tr>
+
+            <!--Friday-->
+            <tr id="wht">
+                <td rowspan="4" id="day">Friday</td>
+                <td>Unit Code</td>
+                <td rowspan="4" colspan="2">Discussions</td>
+                <td rowspan="4" colspan="2">Discussions</td>
+            </tr>
+            <tr id="wht">
+                <td>Unit Name</td>
+            </tr>
+            <tr id="wht">
+                <td>Venue</td>
+            </tr>
+            <tr id="wht">
+                <td>Lecturer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7" style="text-align: center;">&copy;2024. All Rights reserved. Made By Prof S.M. Angera
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
