@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Apllication</title>
+    <style>
+        :root {
+            --primary-background-color: #fff;
+            --primary-background-photo: url('../images/egypt1.jpg');
+            --secondary-background-color: #f1f1f1;
+            --font-size-small: 14px;
+            --font-size-md: 24px;
+            --gap: 2rem;
+            --font-size-lg: 45px;
+            --light-color: #fff;
+            --dark-color: #000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: green;
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: var(--gap);
+
+        }
+        fieldset{
+            padding: 2rem 1rem;
+            backdrop-filter: blur(50px);
+            width: 30rem;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        legend{
+            font-weight: 600;
+            font-size: var(--font-size-md);
+            align-self: center;
+            text-align: center;
+        }
+        .form {
+            font-size: 16px;
+            text-align: start;
+            width: 90%;
+            align-self: center;
+        }
+
+        .form input ,textarea{
+            margin: 1rem .3rem;
+            background-color: transparent;
+            font-size: var(--font-size-small);
+            width: 80%;
+            outline: none;
+            padding-block: .5rem;
+            border: 2px solid black;
+        }
+        select{
+            margin: 1rem .3rem;
+            background-color: transparent;
+            outline: none;
+            padding-block: .5rem;
+            border: 2px solid black;
+        }
+        .buttons {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn {
+            background-color: #d9004d;
+            border: 2px solid #d9004d;
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
+
+        .submit-form-btn {
+            margin-right: 1.5rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     
+    <fieldset>
+        <legend>iDaTos Tech Job Application Form</legend>
+        <form action="" class="form">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" autofocus autocomplete="name"><br>
+
+            <label for="nationality">Nationality</label><br>
+            <input type="text" name="nationality" id="nationality" autocomplete="on"><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob" autocomplete="bday"><br>
+
+            <label for="mail">Email Address</label><br>
+            <input type="email" name="mail" id="mail" autocomplete="email" required><br>
+
+            <label for="phone">Telephone</label><br>
+            <input type="tel" name="phone" id="phone" autocomplete="tel" required ><br>
+            <label for="address">Address Line:</label><br>
+
+            <textarea name="address" id="address" cols="38" rows="5" autocomplete="address-line1">
+
+            </textarea><br>
+
+            <label for="education">Highest Level of Education: </label><br>
+            <select name="education" id="educ">
+                <option value="tertiary">University/College</option>
+                <option value="secondary school">Secondary School</option>
+            </select><br>
+
+            <label for="cert">Specify The certificate:</label><br>
+            <select name="cert" id="cert">
+                <option value="phd">PHD</option>
+                <option value="masters">Masters Degree</option>
+                <option value="bachelor">Bachelors Degree</option>
+                <option value="diploma">Diploma</option>
+                <option value="certificate">Certificate</option>
+            </select><br>
+
+            <label for="exp">Work Experience:</label><br>
+            <label for="work">Latest Job You Attended</label><br>
+
+
+            <input type="text" name="work" id="work"><br>
+            <label for="num">Years of Experience </label><br>
+            <input type="number" name="exp" id="years" min="0" max="10"><br>
+            <label for="ps">Personal Statement:</label><br>
+
+            <textarea name="ps" id="ps" cols="38" rows="4">
+
+            </textarea><br>
+
+            <div class="buttons">
+                <button class="btn clear-form-btn" type="reset">Clear Form</button>
+                <button class="btn submit-form-btn" type="submit">Apply Now </button>
+            </div>
+        </form>
+    </fieldset>
+    
+
 </body>
+
 </html>

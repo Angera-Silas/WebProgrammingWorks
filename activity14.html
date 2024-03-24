@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+</head>
+<body>
+    <h2>Grade Checker</h2>
+    <label for="examType">Select Examination Type:</label>
+    <select id="examType">
+        <option value="cat1">CAT 1</option>
+        <option value="cat2">CAT 2</option>
+        <option value="final-exam">Final Exam</option>
+    </select><br><br>
+    <label for="totalMarks">Enter Total Marks:</label>
+    <input type="number" id="totalMarks"><br><br>
+    <button onclick="checkGrade()">Check Grade</button>
+
+    <script>
+        function checkGrade() {
+            const examType = document.getElementById("examType").value;
+            const totalMarks = parseInt(document.getElementById("totalMarks").value);
+
+            let grade = '';
+            if (examType === "final-exam" && totalMarks >= 90) {
+                grade = 'A+';
+            } else if (totalMarks >= 89 && totalMarks <= 100) {
+                grade = 'A';
+            }
+
+            if (grade !== '') {
+                alert("Your grade is: " + grade);
+            } else {
+                alert("You didn't achieve an A+ grade.");
+            }
+        }
+    </script>
+</body>
+</html>

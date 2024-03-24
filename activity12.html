@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        label {
+            font-size: 18px;
+        }
+
+        #num1,
+        #num2 {
+            margin-top: 1rem;
+            border: 1px solid green;
+            font-size: 18px;
+            width: 50%;
+            padding: 1rem .5rem;
+        }
+
+        #answer {
+            border: none;
+            padding: 1rem 2rem;
+            outline: none;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .calc {
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            padding: .5rem 2rem;
+            border-radius: 5px;
+            border: 1px solid green;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+        <input type="text" name="ans" id="answer" readonly><br>
+        <label for="number1">1<sup>st</sup> Number</label>
+        <input type="text" name="number1" id="num1"><br>
+
+        <label for="number2">2<sup>nd</sup> Number</label>
+        <input type="text" name="number2" id="num2"><br>
+        <div class="buttons">
+            <button type="button" id="multiply" onclick="calculate('multiply')">Multiply</button>
+            <button type="button" id="divide" onclick="calculate('divide')">Divide</button>
+        </div>
+    </div>
+    <script>
+        let c, num1, num2;
+        function calculate(inputID) {
+            var operation = inputID;
+            num1 = document.getElementById('num1').value;
+            num2 = document.getElementById('num2').value;
+            if ((num1 === '') || (num2 === '')) {
+                alert('Please fill all the blank spaces');
+                document.getElementById('answer').value = 'Error';
+            } else {
+                if (operation === 'multiply') {
+                    c = num1 * num2;
+                } else {
+                    if (num2 != 0) {
+                        c = num1 / num2;
+                    } else {
+                        alert('A number cannot be divided by 0');
+                        document.getElementById('num2').value = '';
+                        document.getElementById('num2').autofocus;
+                        document.getElementById('answer').value = 'Error';
+                    }
+                }
+                document.getElementById('answer').value = c;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+
+<body>
+    <script>
+        let playAgain = true;
+
+        while (playAgain) {
+            let number, guessed_number;
+
+            do {
+                guessed_number = prompt('Guess a number between 1 and 10');
+                number = Math.floor(Math.random() * 11); // generates a random number from 0 to 10
+
+                guessed_number = parseInt(guessed_number);
+                
+                if (guessed_number === number) {
+                    alert('Good Work');
+                } else {
+                    alert('Not Matched');
+                }
+            } while (guessed_number !== number);
+
+            playAgain = confirm("Do you want to play again?");
+        }
+
+        alert("Thank you for choosing this game!");
+        window.close(); // Close the tab when the user decides to stop playing
+    </script>
+</body>
+
+</html>

@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        :root{
-    --primary-background-color: #fff;
-    --primary-background-photo: url('../images/egypt2.jpg');
-    --secondary-background-color: #f1f1f1;
-    --font-size-small: 14px;
-    --font-size-md: 24px;
-    --gap: 2rem;
-    --font-size-lg: 45px;
-    --light-color: #fff;
-    --dark-color: #000;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: var(--primary-background-photo);
-    background-position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
+        :root {
+            --primary-background-color: #fff;
+            --primary-background-photo: url('../images/egypt2.jpg');
+            --secondary-background-color: #f1f1f1;
+            --font-size-small: 14px;
+            --font-size-md: 24px;
+            --gap: 2rem;
+            --font-size-lg: 45px;
+            --light-color: #fff;
+            --dark-color: #000;
+        }
 
-ul {
-    list-style: none;
-}
-.list {
-    display: flex;
-    align-items: center;
-    gap: var(--gap);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-}
+        body {
+            background: blue;
+            background-position: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
-.form{
-    font-size: 16px;
-    width: 30rem;
-    text-align: start;
-    backdrop-filter: blur(20px);
-    padding: 2rem 2rem 2rem 3rem;
-}
-.form input{
-    margin: 1rem .3rem;
-    background-color: transparent;
-}
-#day,#month,#year{
-    width: 23rem;
-    height: 2rem;
-    outline: none;
-    border: 2px solid black;
-}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-#day,#month,#year{
-    width: 5rem;
-}
-.dates{
-    display: flex;
-    flex-wrap: wrap;
-}
-.date{
-    width: 30%;
-    margin: 0 1.5%;
-}
-.buttons{
-    justify-content: space-between;
-    display: flex;
-}
-.btn{
-    background-color: #d9004d;
-    border: 2px solid #d9004d;
-    font-size: 1.2rem;
-    padding: .5rem;
-}
-.submit-form-btn{
-    margin-right: 1.5rem;
-}
+        ul {
+            list-style: none;
+        }
 
-button:hover{
-    cursor: pointer;
-}
+        .list {
+            display: flex;
+            align-items: center;
+            gap: var(--gap);
+
+        }
+
+        .form {
+            font-size: 16px;
+            width: 30rem;
+            text-align: start;
+            backdrop-filter: blur(20px);
+            padding: 2rem 2rem 2rem 3rem;
+        }
+
+        .form input {
+            margin: 1rem .3rem;
+            background-color: transparent;
+        }
+
+        #day,
+        #month,
+        #year {
+            width: 23rem;
+            height: 2rem;
+            outline: none;
+            border: 2px solid black;
+        }
+
+        #day,
+        #month,
+        #year {
+            width: 5rem;
+        }
+
+        .dates {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .date {
+            width: 30%;
+            margin: 0 1.5%;
+        }
+
+        .buttons {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .btn {
+            background-color: #d9004d;
+            border: 2px solid #d9004d;
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
+
+        .submit-form-btn {
+            margin-right: 1.5rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
     <form action="" class="form">
         <label for="status">Status: </label>
@@ -139,4 +156,5 @@ button:hover{
         </div>
     </form>
 </body>
+
 </html>

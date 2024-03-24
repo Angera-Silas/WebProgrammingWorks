@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> Application form</title>
+</head>
+<body>
+<form method=" " action=" ">
+first name:<input type="text"name="first-name"/>
+last name:<input type="text"name="last-name"/>
+</br> </br>
+Gender:<input type="radio"name="radio">
+female</input>
+<input type="radio"name="radio">
+male</input>
+<input type="radio"name="radio">
+other</input>
+</br> </br>
+
+
