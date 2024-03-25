@@ -22,16 +22,16 @@
                 guessed_number = parseInt(guessed_number);
                 
                 if (guessed_number === number) {
-                    alert('Good Work');
+                    alert('Good Work \nNumber is: '+number);
                 } else {
-                    alert('Not Matched');
+                    alert('Not Matched \nNumber was: '+number);
                 }
             } while (guessed_number !== number);
 
             playAgain = confirm("Do you want to play again?");
         }
 
-        alert("Thank you for choosing this game!. Designed by Prof Angera");
+        alert("Thank you for choosing this game!...\nDesigned by Prof Angera");
         window.close(); // Close the tab when the user decides to stop playing
     </script>
 </body>
