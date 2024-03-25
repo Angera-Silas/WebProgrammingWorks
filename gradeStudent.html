@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Grade Checker</h2>
-    <label for="examType">Select Examination Type:</label>
+    <label for="examType">Select Examination:</label>
     <select id="examType">
         <option value="cat1">CAT 1</option>
         <option value="cat2">CAT 2</option>
@@ -24,15 +24,15 @@
 
             let grade = '';
             if (examType === "final-exam" && totalMarks >= 90) {
-                grade = 'A+';
+                grade = 'True';
             } else if (totalMarks >= 89 && totalMarks <= 100) {
-                grade = 'A';
+                grade = 'True';
             }
 
             if (grade !== '') {
-                alert("Your grade is: " + grade);
+                alert(grade);
             } else {
-                alert("You didn't achieve an A+ grade.");
+                alert("False");
             }
         }
     </script>
